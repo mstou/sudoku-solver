@@ -1,2 +1,2 @@
-import { getColumn } from './utils';
-export { getColumn };
+import { getColumn, getSector } from './utils';
+export { getColumn, getSector };
