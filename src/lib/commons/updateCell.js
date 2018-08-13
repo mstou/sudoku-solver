@@ -7,8 +7,8 @@ const updateCell = (board, i, j, num) => (
     return [
       ...acc,
       [...row.slice(0,j),
-        num
-        ,...row.slice(j+1,row.length)
+        num,
+        ...row.slice(j+1,row.length)
     ]];
 
   }, [])

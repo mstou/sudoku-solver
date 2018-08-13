@@ -21,8 +21,8 @@ const getSubMatrix =  (board,topX,topY,bottomX,bottomY) => (
 ));
 
 const getSector = (board,x,y) => {
-  const horizontalSector = Math.floor(x/3);
-  const verticalSector = Math.floor(y/3);
+  const horizontalSector = Math.floor(y/3);
+  const verticalSector = Math.floor(x/3);
 
   const topX = verticalSector*3;
   const topY = horizontalSector*3;
