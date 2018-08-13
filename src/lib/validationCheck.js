@@ -17,7 +17,7 @@ const isRowValid = (board, i, j, num) => (
 const isSectorValid = (board, i, j, num) => (
   //returns false iff there is another appearance of 'num' in the sector (i,j) belongs to
   getSector(board,i,j).find(
-    (elem) => elem===num
+    elem => elem===num
   ) === undefined
 );
 
@@ -28,15 +28,4 @@ const isNumberValid = (board, i, j, num) => (
   && isSectorValid(board, i, j, num)
 );
 
-// tests
-// const sudokuBoard = [
-//   [2,0,0,7,0,0,0,0,0],
-//   [0,4,0,6,0,0,0,5,9],
-//   [0,0,5,0,4,9,8,0,0],
-//   [0,0,0,0,0,0,0,9,0],
-//   [7,0,2,0,0,0,5,0,1],
-//   [0,9,0,0,0,0,0,0,0],
-//   [0,0,3,4,1,0,9,0,0],
-//   [6,2,0,0,0,5,0,3,0],
-//   [0,0,0,0,0,3,0,0,6]
-// ];
+export { isNumberValid };
