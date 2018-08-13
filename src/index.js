@@ -38,5 +38,5 @@ const sudokuBoard2 = [
   [0,0,0,0,0,0,0,0,0],
 ];
 
-console.log(sudokuBoard);
-console.log(solveSudoku(sudokuBoard));
+console.log(sudokuBoard2);
+console.log(solveSudoku(sudokuBoard2));

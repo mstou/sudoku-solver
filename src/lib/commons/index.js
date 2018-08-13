@@ -1,3 +1,3 @@
-import { getColumn, getSector } from './utils';
+import { getColumn, getSector, emptyBoard } from './utils';
 import { updateCell } from './updateCell'
-export { getColumn, getSector, updateCell };
+export { getColumn, getSector, updateCell, emptyBoard };

@@ -33,8 +33,20 @@ const getSector = (board,x,y) => {
 
 };
 
+const emptyBoard = () => (
+  [
+    [0,0,0,0,0,0,0,0,0],
+    [0,0,0,0,0,0,0,0,0],
+    [0,0,0,0,0,0,0,0,0],
+    [0,0,0,0,0,0,0,0,0],
+    [0,0,0,0,0,0,0,0,0],
+    [0,0,0,0,0,0,0,0,0],
+    [0,0,0,0,0,0,0,0,0],
+    [0,0,0,0,0,0,0,0,0]
+  ]
+);
 
-export { getColumn, getSector };
+export { getColumn, getSector, emptyBoard };
 
 
 // ------DOCUMENTATION------
