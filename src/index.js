@@ -1,6 +1,13 @@
+import React from 'react';
+import ReactDom from 'react-dom';
 import { solveSudoku } from './lib';
-
+import Board from './components/board/Board';
 //tests
+
+ReactDom.render(
+  <Board />,
+  document.getElementById('root')
+);
 
 const sudokuBoard = [
   [2,0,0,7,0,0,0,0,0],
