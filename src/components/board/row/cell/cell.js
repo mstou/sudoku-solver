@@ -1,11 +1,11 @@
 import React from 'react';
 import './styles.css';
 
-const Cell = ({data, row, column}) => (
+const Cell = ({data, row, column, onChange}) => (
   <input
     className="sudoku-cell"
-    value={(data!==0) ? data : undefined }
-    onChange={ (e) => console.log(e.target.value)}
+    value={(data!==0) ? data : '' }
+    onChange={(e) => onChange(row,column,e.target.value.slice(-1))}
   />
 );
 
