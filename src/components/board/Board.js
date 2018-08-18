@@ -7,7 +7,6 @@ const Board = ({ board }) => (
       <Row row={row} />
     ))}
   </div>
-
-)
+);
 
 export default Board;
