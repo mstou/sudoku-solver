@@ -10,17 +10,17 @@ const sudokuReducer = (state = initialState, action = {}) => {
 
     case 'CHANGE_CELL':
       const {row,column,input} = action.payload;
-      if(input==' '){
+      if(input===' '){
         return Object.freeze({
           ...state,
           board: updateCell(state.board,row,column,0)
         });
       }
       else {
-        const validChange = isNumberValid(state.board,row,column,parseInt(input));
+        const validChange = isNumberValid(state.board,row,column,parseInt(input,10));
         return Object.freeze({
           ...state,
-          board: updateCell(state.board,row,column,parseInt(input)),
+          board: updateCell(state.board,row,column,parseInt(input,10)),
           isBoardValid: state.isBoardValid && validChange
         });
       }
