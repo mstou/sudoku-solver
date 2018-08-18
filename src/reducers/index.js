@@ -1,2 +1,2 @@
-import sudokuReducer from './sudokuReducer';
+import { sudokuReducer } from './sudokuReducer';
 export default sudokuReducer;

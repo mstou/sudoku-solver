@@ -13,14 +13,14 @@ const sudokuReducer = (state = initialState, action = {}) => {
       if(input==' '){
         return Object.freeze({
           ...state,
-          board: updateCell(state.board,row,index,0)
+          board: updateCell(state.board,row,column,0)
         });
       }
       else {
-        const validChange = isNumberValid(state.board,row,index,parseInt(input));
+        const validChange = isNumberValid(state.board,row,column,parseInt(input));
         return Object.freeze({
           ...state,
-          board: updateCell(state.board,row,index,parseInt(input)),
+          board: updateCell(state.board,row,column,parseInt(input)),
           isBoardValid: state.isBoardValid && validChange
         });
       }
