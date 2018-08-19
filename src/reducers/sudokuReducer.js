@@ -28,7 +28,7 @@ const sudokuReducer = (state = initialState, action = {}) => {
     case 'SOLVE_BOARD':
       return Object.freeze({
         ...state,
-        board: solveSudoku(state.board)
+        board: solveSudoku(state.board).board
       });
 
     case 'CLEAR_BOARD':
