@@ -1,2 +1,3 @@
 import Board from './board';
-export { Board };
+import Buttons from './buttons';
+export { Board, Buttons };

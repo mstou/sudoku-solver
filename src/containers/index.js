@@ -1,2 +1,3 @@
 import SudokuBoard from './SudokuBoard';
-export { SudokuBoard };
+import Buttons from './Buttons';
+export { SudokuBoard, Buttons };
