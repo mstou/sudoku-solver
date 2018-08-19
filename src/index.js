@@ -2,14 +2,21 @@ import React from 'react';
 import { render } from 'react-dom';
 import { createStore } from 'redux';
 import { Provider } from 'react-redux';
-import { SudokuBoard } from './containers';
+import { SudokuBoard, Buttons } from './containers';
 import SudokuReducer from './reducers';
 
 const store = createStore(SudokuReducer);
 
+const SudokuApp = () => (
+  <div className="sudoku-app">
+    <SudokuBoard />
+    <Buttons />
+  </div>
+);
+
 render(
   <Provider store={store}>
-    <SudokuBoard />
+    <SudokuApp />
   </Provider>,
   document.getElementById('root')
 );
