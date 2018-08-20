@@ -2,6 +2,10 @@
   width: 100%;
 }
 
+body {
+  background-image: url('./background.png');
+}
+
 .sudoku-board {
   width: 80%;
   height: 70%;
