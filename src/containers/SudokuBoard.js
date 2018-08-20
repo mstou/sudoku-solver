@@ -3,7 +3,10 @@ import { Board } from '../components';
 import { changeCell } from '../actions';
 
 const mapStateToProps = (state) => ({
-  board: state.board
+  board: state.board,
+  valid: state.isCellValid,
+  preSelected: state.preSelected,
+  solved: state.solved
 });
 
 const mapDispatchToProps = (dispatch) => ({
