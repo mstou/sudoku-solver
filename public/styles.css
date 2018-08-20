@@ -1,0 +1,29 @@
+#root .sudoku-app {
+  width: 100%;
+}
+
+.sudoku-board {
+  width: 80%;
+  height: 70%;
+  margin: auto auto;
+  max-width: 30em;
+}
+
+.sudoku-row {
+  margin: auto auto;
+  width: 27em;
+}
+
+.sudoku-cell {
+  display: inline-block;
+  width: 3em;
+}
+
+.sudoku-cell input {
+  width: 2em;
+  height: 2em;
+  margin: 0 0;
+  font-size: 1.5em;
+  text-align: center;
+  display: inline-block;
+}
