@@ -37,6 +37,10 @@ body {
   color: #c2c4c4;
 }
 
+.notValidCell input {
+  color: red;
+}
+
 .borderRight {
   border-right: 0.2em solid  #707b7d;
 }
