@@ -52,17 +52,18 @@ body {
 
 .sudoku-buttons {
   display: inline-block;
-  width: 11.25%;
-  margin-left: 44.375%;
+  width: 15%;
+  margin-left: 42.5%;
 }
 
 .SolveButton, .ClearButton {
-  width: 6em;
+  width: 40%;
   text-align: center;
 }
 
+
 .SolveButton {
-  margin-right: 2em;
+  margin-right: 20%;
 }
 
 
