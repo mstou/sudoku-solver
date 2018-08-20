@@ -33,17 +33,17 @@ const getSector = (board,x,y) => {
 
 };
 
-const emptyBoard = () => (
+const emptyBoard = (value=0) => (
   [
-    [0,0,0,0,0,0,0,0,0],
-    [0,0,0,0,0,0,0,0,0],
-    [0,0,0,0,0,0,0,0,0],
-    [0,0,0,0,0,0,0,0,0],
-    [0,0,0,0,0,0,0,0,0],
-    [0,0,0,0,0,0,0,0,0],
-    [0,0,0,0,0,0,0,0,0],
-    [0,0,0,0,0,0,0,0,0],
-    [0,0,0,0,0,0,0,0,0]
+    [value,value,value,value,value,value,value,value,value],
+    [value,value,value,value,value,value,value,value,value],
+    [value,value,value,value,value,value,value,value,value],
+    [value,value,value,value,value,value,value,value,value],
+    [value,value,value,value,value,value,value,value,value],
+    [value,value,value,value,value,value,value,value,value],
+    [value,value,value,value,value,value,value,value,value],
+    [value,value,value,value,value,value,value,value,value],
+    [value,value,value,value,value,value,value,value,value]
   ]
 );
 
