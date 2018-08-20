@@ -5,18 +5,18 @@
 .sudoku-board {
   width: 80%;
   height: 70%;
-  margin: auto auto;
+  margin: 5% auto;
   max-width: 30em;
 }
 
 .sudoku-row {
   margin: auto auto;
-  width: 27em;
+  width: 30em;
 }
 
 .sudoku-cell {
   display: inline-block;
-  width: 3em;
+  width: 3.25em;
 }
 
 .sudoku-cell input {
@@ -26,4 +26,12 @@
   font-size: 1.5em;
   text-align: center;
   display: inline-block;
+}
+
+.borderRight {
+  border-right: 0.2em solid #444;
+}
+
+.borderBottom {
+  border-bottom: 0.2em solid #444;
 }
