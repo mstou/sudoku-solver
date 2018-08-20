@@ -10,7 +10,7 @@ const sudokuReducer = (state = initialState, action = {}) => {
 
     case 'CHANGE_CELL':
       const {row,column,input} = action.payload;
-      if(input===' '){
+      if(input===' ' || input==='' || isNaN(input)){
         return Object.freeze({
           ...state,
           board: updateCell(state.board,row,column,0)
