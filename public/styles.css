@@ -41,6 +41,23 @@ body {
   border-bottom: 0.2em solid  #707b7d;
 }
 
+
+.sudoku-buttons {
+  display: inline-block;
+  width: 11.25%;
+  margin-left: 44.375%;
+}
+
+.SolveButton, .ClearButton {
+  width: 6em;
+  text-align: center;
+}
+
+.SolveButton {
+  margin-right: 2em;
+}
+
+
 .SolveButton, .ClearButton {
 	-moz-box-shadow:inset 0px 26px 0px 0px #ffffff;
 	-webkit-box-shadow:inset 0px 26px 0px 0px #ffffff;
