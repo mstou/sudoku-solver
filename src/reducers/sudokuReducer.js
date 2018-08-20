@@ -47,19 +47,17 @@ const sudokuReducer = (state = initialState, action = {}) => {
 
     case 'SOLVE_BOARD':
 
-      return Object.freeze({
+      return (state.isBoardValid) ? Object.freeze({
         ...state,
         board: solveSudoku(state.board).board,
         solved: true
-      });
+      })
+      :
+      state;
 
 
     case 'CLEAR_BOARD':
       return initialState;
-
-
-    case 'SOLVE_INVALID_BOARD':
-      return state;
 
 
     default:
