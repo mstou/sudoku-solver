@@ -2,7 +2,8 @@ import { emptyBoard, isNumberValid, updateCell, solveSudoku } from '../lib';
 
 const initialState = Object.freeze({
   board: emptyBoard(),
-  isBoardValid: true
+  isBoardValid: true,
+  sovled: false
 });
 
 const sudokuReducer = (state = initialState, action = {}) => {
@@ -10,12 +11,18 @@ const sudokuReducer = (state = initialState, action = {}) => {
 
     case 'CHANGE_CELL':
       const {row,column,input} = action.payload;
+
+      if(state.solved){
+        return state;
+      }
+
       if(input===' ' || input==='' || isNaN(input)){
         return Object.freeze({
           ...state,
           board: updateCell(state.board,row,column,0)
         });
       }
+      
       else {
         const validChange = isNumberValid(state.board,row,column,parseInt(input,10));
         return Object.freeze({
@@ -28,7 +35,8 @@ const sudokuReducer = (state = initialState, action = {}) => {
     case 'SOLVE_BOARD':
       return Object.freeze({
         ...state,
-        board: solveSudoku(state.board).board
+        board: solveSudoku(state.board).board,
+        solved: true
       });
 
     case 'CLEAR_BOARD':
