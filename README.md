@@ -3,6 +3,8 @@
 
  __TL;DR:__ I was solving some sudoku boards on vacations and I was too bored to spend hours trying to solve the difficult ones..and as I cant stay away from coding too many days, I thought I should hand them over to my pc :P. [Enjoy](https://mstou.github.io/sudoku-solver/)
 
+### Contents
+
 __/src/lib__ contains a purely functional implementation of a sudoku solver written in JS. The solver checks if the current state of the board implies the position of some numbers, and iterates until there are no such implications. Then it proceeds by guessing an empty cell's number and tries to recursively solve the problem using backtracking.
 
 __/src/components__ contains our app's dummy React components
