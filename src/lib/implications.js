@@ -30,4 +30,13 @@ const eliminateColumnNumbers = (board, possibleNumbers) => (
   ))
 );
 
-export { attachPossibleNumbers, eliminateRowNumbers, eliminateColumnNumbers };
+const eliminateSectorNumbers = (board, possibleNumbers) => (
+  // for each cell's possible numbers, it eliminates nums that appear elsewhere in the same sector
+  possibleNumbers.map( (row,rowIndex) => (
+    row.map( (cellNums,columnIndex) =>
+      cellNums.filter( num => !getSector(board,rowIndex,columnIndex).includes(num) )
+    )
+  ))
+);
+
+export { attachPossibleNumbers, eliminateRowNumbers, eliminateColumnNumbers, eliminateSectorNumbers };
