@@ -21,4 +21,13 @@ const eliminateRowNumbers = (board, possibleNumbers) => (
   ))
 );
 
-export { attachPossibleNumbers, eliminateRowNumbers };
+const eliminateColumnNumbers = (board, possibleNumbers) => (
+  // for each cell's possible numbers, it eliminates nums that appear elsewhere in the same column
+  possibleNumbers.map( (row,rowIndex) => (
+    row.map( (cellNums,columnIndex) =>
+      cellNums.filter( num => !getColumn(board,columnIndex).includes(num) )
+    )
+  ))
+);
+
+export { attachPossibleNumbers, eliminateRowNumbers, eliminateColumnNumbers };
